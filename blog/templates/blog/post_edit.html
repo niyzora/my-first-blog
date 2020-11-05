@@ -1,6 +1,13 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+<style>
+    .post-form{
+      float: left;
+      width: 100%;
+      margin-top: 6px;
+    }
+</style>
     <h1>New post</h1>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
