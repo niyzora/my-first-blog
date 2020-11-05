@@ -1,4 +1,20 @@
 {% extends 'blog/base.html' %}
+<style>
+   .post-form{
+  width: 100%;
+  padding: 50px;
+
+  resize: vertical;
+}
+.post-form textarea, .post-form input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+h1{
+padding: 0 0 0 50px;
+}
+</style>
 
 {% block content %}
     {% for post in posts %}
